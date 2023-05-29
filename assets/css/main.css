@@ -20,7 +20,7 @@
 /* Colors */
 :root {
   --color-default: #212529;
-  --color-primary: #ce1212;
+  --color-primary: #722F37;
   --color-secondary: #37373f;
 }
 
@@ -43,7 +43,7 @@ a {
 }
 
 a:hover {
-  color: #ec2727;
+  color: var(--color-primary);
   text-decoration: none;
 }
 
@@ -54,6 +54,15 @@ h4,
 h5,
 h6 {
   font-family: var(--font-secondary);
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
 }
 
 /*--------------------------------------------------------------
@@ -277,6 +286,16 @@ section {
 }
 
 .header .logo h1 span {
+  color: var(--color-primary) !important;
+}
+
+.subtitle{
+  text-decoration: none;
+  text-align: center;
+  display: flow-root;
+}
+
+.subtitle:hover{
   color: var(--color-primary);
 }
 
@@ -293,6 +312,23 @@ section {
 
 .header .btn-book-a-table:hover,
 .header .btn-book-a-table:focus:hover {
+  color: #fff;
+  background: rgba(206, 18, 18, 0.8);
+}
+
+
+.btn-book-now,
+.btn-book-now:focus {
+  font-size: 14px;
+  color: #fff;
+  background: var(--color-primary);
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.btn-book-now:hover,
+.btn-book-now:focus:hover {
   color: #fff;
   background: rgba(206, 18, 18, 0.8);
 }
@@ -567,7 +603,7 @@ section {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about .about-img {
+.about-img {
   min-height: 500px;
 }
 
