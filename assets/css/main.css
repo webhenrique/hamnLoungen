@@ -73,6 +73,9 @@ section {
   padding: 80px 0;
 }
 
+.menu-img.img-fluid{
+  max-height: 200px;
+}
 .section-bg {
   background-color: #eee;
 }
